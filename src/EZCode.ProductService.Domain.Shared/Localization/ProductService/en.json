@@ -8,6 +8,7 @@
     "Menu:Products": "Products",
     "Menu:ProductService": "ProductService",
     "Permission:Create": "Create",
-    "Permission:Update": "Update"
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete"
   }
 }

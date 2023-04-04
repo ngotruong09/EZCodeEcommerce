@@ -11,5 +11,6 @@ namespace EZCode.ProductService.Products
         Task<ProductDto> CreateAsync(CreateProductInput request);
         Task<ProductDto> UpdateAsync(Guid id, ProductUpdateDto input);
         Task<ProductDto> GetAsync(Guid id);
+        Task DeleteAsync(Guid id);
     }
 }

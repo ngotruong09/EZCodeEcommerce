@@ -45,5 +45,12 @@ namespace EZCode.ProductService.Products
         {
             return _service.GetAsync(id);
         }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public Task DeleteAsync(Guid id)
+        {
+            return _service.DeleteAsync(id);
+        }
     }
 }

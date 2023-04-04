@@ -27,6 +27,12 @@ namespace EZCode.ProductService.Products
             return ObjectMapper.Map<Product, ProductDto>(entity);
         }
 
+        [Authorize(ProductServicePermissions.Products.Delete)]
+        public async Task DeleteAsync(Guid id)
+        {
+            await _productRepository.DeleteAsync(x=> x.Id == id);
+        }
+
         public async Task<ProductDto> GetAsync(Guid id)
         {
             var product = await _productRepository.GetAsync(x=>x.Id == id);

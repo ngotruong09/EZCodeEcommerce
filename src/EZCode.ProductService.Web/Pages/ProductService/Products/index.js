@@ -53,6 +53,9 @@ function SetGrid() {
                                 },
                                 {
                                     text: l('Delete'),
+                                    confirmMessage: function () {
+                                        return "Are you sure111?";
+                                    },
                                     action: function (data) {
                                         productService.delete(data.record.id)
                                             .then(function () {
