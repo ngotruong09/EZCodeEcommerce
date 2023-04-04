@@ -39,6 +39,7 @@
 
   <ItemGroup>
     <None Remove="Pages\ProductService\Products\createModal.js" />
+    <None Remove="Pages\ProductService\Products\editModal.js" />
     <None Remove="Pages\ProductService\Products\index.js" />
   </ItemGroup>
 

@@ -6,7 +6,7 @@ using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
 
 namespace EZCode.ProductService.Web.Pages.ProductService.Products
 {
-    public class CreateModalModel : AbpPageModel
+    public class CreateModalModel : ProductServicePageModel
     {
         private readonly IProductAppService _productAppService;
 

@@ -5,6 +5,11 @@ var createModal = new abp.ModalManager({
     scriptUrl: '/Pages/ProductService/Products/createModal.js?_v=1', //Lazy Load URL
     modalClass: 'createModal'
 });
+var editModal = new abp.ModalManager({
+    viewUrl: abp.appPath + "ProductService/Products/EditModal",
+    scriptUrl: "/Pages/ProductService/Products/editModal.js",
+    modalClass: "editModal"
+});
 
 $(function () {
     //SetDatatable();
@@ -15,6 +20,9 @@ $(function () {
         createModal.open();
     });
     createModal.onResult(function () {
+        dataTable.ajax.reload();
+    });
+    editModal.onResult(function () {
         dataTable.ajax.reload();
     });
 });
@@ -36,7 +44,21 @@ function SetGrid() {
                                 {
                                     text: l('Edit'),
                                     action: function (data) {
-                                        
+                                        editModal.open(
+                                            {
+                                                id: data.record.id
+                                            }
+                                        );
+                                    }
+                                },
+                                {
+                                    text: l('Delete'),
+                                    action: function (data) {
+                                        productService.delete(data.record.id)
+                                            .then(function () {
+                                                abp.notify.info(l("Xoa Thanh Cong"));
+                                                dataTable.ajax.reload();
+                                            });
                                     }
                                 }
                             ]

@@ -7,6 +7,7 @@
     "Permission:ProductService": "Product Service",
     "Menu:Products": "Products",
     "Menu:ProductService": "ProductService",
-    "Permission:Create": "Create"
+    "Permission:Create": "Create",
+    "Permission:Update": "Update"
   }
 }

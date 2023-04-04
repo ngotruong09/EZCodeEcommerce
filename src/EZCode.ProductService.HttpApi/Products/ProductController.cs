@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
@@ -29,6 +30,20 @@ namespace EZCode.ProductService.Products
         public Task<ProductDto> CreateAsync(CreateProductInput request)
         {
             return _service.CreateAsync(request);
+        }
+
+        [HttpPost]
+        [Route("{id}")]
+        public Task<ProductDto> UpdateAsync(Guid id, ProductUpdateDto input)
+        {
+            return _service.UpdateAsync(id, input);
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public Task<ProductDto> GetAsync(Guid id)
+        {
+            return _service.GetAsync(id);
         }
     }
 }

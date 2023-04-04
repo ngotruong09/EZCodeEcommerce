@@ -27,6 +27,12 @@ namespace EZCode.ProductService.Products
             return ObjectMapper.Map<Product, ProductDto>(entity);
         }
 
+        public async Task<ProductDto> GetAsync(Guid id)
+        {
+            var product = await _productRepository.GetAsync(x=>x.Id == id);
+            return ObjectMapper.Map<Product, ProductDto>(product);
+        }
+
         public async Task<PagedResultDto<ProductDto>> GetListAsync(GetProductsInput request)
         {
             var queryable = await _productRepository.GetQueryableAsync();
@@ -45,6 +51,15 @@ namespace EZCode.ProductService.Products
             };
 
             return res;
+        }
+
+        [Authorize(ProductServicePermissions.Products.Update)]
+        public async Task<ProductDto> UpdateAsync(Guid id, ProductUpdateDto input)
+        {
+            var product = await _productRepository.GetAsync(x=>x.Id == id);
+            var productUpdate = ObjectMapper.Map(input, product);
+            productUpdate = await _productRepository.UpdateAsync(productUpdate);
+            return ObjectMapper.Map<Product, ProductDto>(productUpdate);
         }
     }
 }

@@ -1,0 +1,18 @@
+﻿@page
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model EZCode.ProductService.Web.Pages.ProductService.Products.EditModalModel
+@{
+    Layout = null;
+}
+<form method="post" asp-page="/ProductService/Products/EditModal" autocomplete="off">
+    <abp-modal>
+        <abp-modal-header title="Edit Product"></abp-modal-header>
+        <abp-modal-body>
+            <abp-input asp-for="Id" />
+            <abp-input asp-for="ProductUpdateDto.Name" />
+            <abp-input asp-for="ProductUpdateDto.Description" />
+            <abp-input asp-for="ProductUpdateDto.Price" />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@AbpModalButtons.Save | @AbpModalButtons.Cancel"></abp-modal-footer>
+    </abp-modal>
+</form>

@@ -12,6 +12,7 @@ public class ProductServicePermissionDefinitionProvider : PermissionDefinitionPr
 
         var productPermission = myGroup.AddPermission(ProductServicePermissions.Products.Default, L("Permission:Products"));
         productPermission.AddChild(ProductServicePermissions.Products.Create, L("Permission:Create"));
+        productPermission.AddChild(ProductServicePermissions.Products.Update, L("Permission:Update"));
     }
 
     private static LocalizableString L(string name)
