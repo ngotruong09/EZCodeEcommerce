@@ -1,0 +1,9 @@
+{
+  "culture": "vi",
+  "texts": {
+    "MyAccount": "Tài khoản của tôi",
+    "SamplePageMessage": "Trang mẫu cho mô-đun ProductService",
+    "Permission:Products": "Sản phẩm",
+    "Permission:ProductService": "Module Sản Phẩm"
+  }
+}

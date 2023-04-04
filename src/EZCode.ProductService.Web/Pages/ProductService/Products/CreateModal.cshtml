@@ -1,0 +1,17 @@
+﻿@page
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model EZCode.ProductService.Web.Pages.ProductService.Products.CreateModalModel
+@{
+    Layout = null;
+}
+<form method="post" asp-page="/ProductService/Products/CreateModal" autocomplete="off">
+    <abp-modal>
+        <abp-modal-header title="Create New Product"></abp-modal-header>
+        <abp-modal-body>
+            <abp-input asp-for="Product.Name" />
+            <abp-input asp-for="Product.Description" />
+            <abp-input asp-for="Product.Price" />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@AbpModalButtons.Save | @AbpModalButtons.Cancel"></abp-modal-footer>
+    </abp-modal>
+</form>

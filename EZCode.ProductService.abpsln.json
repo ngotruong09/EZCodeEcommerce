@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "EZCode.ProductService": {
+      "path": "EZCode.ProductService.abpmdl.json"
+    }
+  }
+}

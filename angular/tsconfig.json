@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@e-zCode/product-service": [
+        "projects/product-service/src/public-api.ts"
+      ],
+      "@e-zCode/product-service/config": [
+        "projects/product-service/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/product-service/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/product-service/src/lib/proxy/*"]
+    }
+  }
+}

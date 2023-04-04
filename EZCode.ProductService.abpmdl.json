@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "EZCode.ProductService.Domain.Shared": {
+      "path": "src/EZCode.ProductService.Domain.Shared/EZCode.ProductService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.Domain": {
+      "path": "src/EZCode.ProductService.Domain/EZCode.ProductService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.Application.Contracts": {
+      "path": "src/EZCode.ProductService.Application.Contracts/EZCode.ProductService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.Application": {
+      "path": "src/EZCode.ProductService.Application/EZCode.ProductService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.EntityFrameworkCore": {
+      "path": "src/EZCode.ProductService.EntityFrameworkCore/EZCode.ProductService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.MongoDB": {
+      "path": "src/EZCode.ProductService.MongoDB/EZCode.ProductService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.HttpApi": {
+      "path": "src/EZCode.ProductService.HttpApi/EZCode.ProductService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.HttpApi.Client": {
+      "path": "src/EZCode.ProductService.HttpApi.Client/EZCode.ProductService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.TestBase": {
+      "path": "test/EZCode.ProductService.TestBase/EZCode.ProductService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "EZCode.ProductService.EntityFrameworkCore.Tests": {
+      "path": "test/EZCode.ProductService.EntityFrameworkCore.Tests/EZCode.ProductService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EZCode.ProductService.MongoDB.Tests": {
+      "path": "test/EZCode.ProductService.MongoDB.Tests/EZCode.ProductService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EZCode.ProductService.Domain.Tests": {
+      "path": "test/EZCode.ProductService.Domain.Tests/EZCode.ProductService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EZCode.ProductService.Application.Tests": {
+      "path": "test/EZCode.ProductService.Application.Tests/EZCode.ProductService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EZCode.ProductService.HttpApi.Host": {
+      "path": "host/EZCode.ProductService.HttpApi.Host/EZCode.ProductService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EZCode.ProductService.Web": {
+      "path": "src/EZCode.ProductService.Web/EZCode.ProductService.Web.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/EZCode.ProductService.HttpApi.Client.ConsoleTestApp/EZCode.ProductService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "EZCode.ProductService.Web.Host": {
+      "path": "host/EZCode.ProductService.Web.Host/EZCode.ProductService.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EZCode.ProductService.IdentityServer": {
+      "path": "host/EZCode.ProductService.IdentityServer/EZCode.ProductService.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "EZCode.ProductService.Host.Shared": {
+      "path": "host/EZCode.ProductService.Host.Shared/EZCode.ProductService.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "EZCode.ProductService.Web.Unified": {
+      "path": "host/EZCode.ProductService.Web.Unified/EZCode.ProductService.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "EZCode.ProductService.Blazor": {
+      "path": "src/EZCode.ProductService.Blazor/EZCode.ProductService.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.Blazor.Host": {
+      "path": "host/EZCode.ProductService.Blazor.Host/EZCode.ProductService.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EZCode.ProductService.Blazor.Server": {
+      "path": "src/EZCode.ProductService.Blazor.Server/EZCode.ProductService.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.Blazor.WebAssembly": {
+      "path": "src/EZCode.ProductService.Blazor.WebAssembly/EZCode.ProductService.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "EZCode.ProductService.Blazor.Server.Host": {
+      "path": "host/EZCode.ProductService.Blazor.Server.Host/EZCode.ProductService.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

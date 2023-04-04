@@ -1,0 +1,12 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the ProductService module",
+    "Permission:Products": "Products",
+    "Permission:ProductService": "Product Service",
+    "Menu:Products": "Products",
+    "Menu:ProductService": "ProductService",
+    "Permission:Create": "Create"
+  }
+}
